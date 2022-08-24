@@ -15,9 +15,9 @@
     width: 16px;
 }
 
-.cardlist::-webkit-scrollbar-track {
+/* .cardlist::-webkit-scrollbar-track {
     background: #ffffff;
-}
+} */
 
 .cardlist::-webkit-scrollbar-thumb {
     background-color: #c6cfd7;

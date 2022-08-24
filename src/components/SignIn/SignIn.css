@@ -1,0 +1,33 @@
+.sign-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sign-container button{
+    background-color: #EC255A;
+    color:aliceblue;
+    border: 0;
+    border-radius: 5px;
+    height: 2.8rem;
+    width: 28vw;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.sign-container button:hover{
+    background-color: palevioletred;
+}
+
+.sign-container input{
+    border: 0;
+    border-radius: 5px;
+    height: 2.8rem;
+    width: 28vw;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}

@@ -1,6 +1,4 @@
-body.active-modal {
-    overflow-y: hidden;
-}
+
 
 .btn-modal {
     padding: 0;
@@ -8,7 +6,7 @@ body.active-modal {
     font-size: 18px;
     border: none;
     cursor: pointer;
-    background: #FFF573;
+    background: #fbbccb !important;
 
 }
 .modal, .overlay {
@@ -19,7 +17,6 @@ body.active-modal {
     right: 0;
     bottom: 0;
     position: fixed;
-    z-index: 99999px;
 }
 
 .overlay {

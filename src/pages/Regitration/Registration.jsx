@@ -7,11 +7,10 @@ import NavBar from '../../components/NavBar/NavBar'
 export default function Registration() {
   return (
     <div className='registration'>
-      <NavBar isSignin={false}/>
+      <NavBar isSignin={false} atSignup={false}/>
+      <div className='registraion-body'>
         <RegistrationForm />
-        <div id='registration-img'>
-            <img src='/registrationPic.svg' />
-        </div>
+      </div>
     </div>
   )
 }

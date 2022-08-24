@@ -111,25 +111,32 @@ export default function Dashboard() {
     if(isLoading) return 
     return (
         <div id='dashboard'>
-             <NavBar isSignin={true} />
-            <div className="dashboard-profile"><Profile user={user} reload={reload}/></div>
-            <div className='dashboard-summary'>
-                <div>
-                    <div id='dashboard-goal'>
-                        <Goal inspiration={user.goals.inspiration} weeklyGoal={user.goals.weeklyGoal} doneWeekly={user.doneWeekly} />
-                        <BMI weight={user.weight} height={user.height} />
+            <NavBar isSignin={true} />
+            <div className="dashboard-body">
+                <div className="dashboard-profile"><Profile user={user} reload={reload}/></div>
+                <div className='dashboard-summary'>
+                    <div className="dashboard-top">
+                        <div id='dashboard-goal'>
+                            <Goal inspiration={user.goals.inspiration} weeklyGoal={user.goals.weeklyGoal} doneWeekly={user.doneWeekly} />
+                            <BMI weight={user.weight} height={user.height} />
+                        </div>
+                        <div className="barChart">
+                            <BarChart />
+                        </div>
+                        
                     </div>
-                    <BarChart />
-                </div>
-                <div id='dashboard-cards'>
-                    <div id="dashboard-cards-heading">
-                        <img src='/run.png'/>
-                        <h3>Recent Activities</h3>
+                    <div id='dashboard-cards'>
+                        <div id="dashboard-cards-heading">
+                            <img src='/run.png'/>
+                            <h3>Recent Activities</h3>
+                        </div>
+                        <CardList cards={user.activities} onRemove={onRemove} reload={reload} />
+                        <div className="seeMore-scards">
+                            <Link to='/activities'><button>See more</button></Link>
+                        </div>
                     </div>
-                    <CardList cards={user.activities} onRemove={onRemove} reload={reload} />
-                    <Link to='/activities'>see more ...</Link>
                 </div>
-            </div>
+            </div> 
         </div>
     )
 }
