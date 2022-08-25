@@ -9,6 +9,10 @@
     /* padding-top: 150px; */
 }
 
+#profilePic {
+    height: 10rem;
+}
+
 .nameProfile, .profileDetails {
     color: #000;
     margin: 0;
