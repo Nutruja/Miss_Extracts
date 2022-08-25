@@ -30,6 +30,10 @@
     color: antiquewhite;
 }
 
+#register-button:hover{
+    background-color: palevioletred;
+}
+
 .regis-form input {
     height: 2.8rem;
     width: 28vw;

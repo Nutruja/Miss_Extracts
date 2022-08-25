@@ -1,0 +1,13 @@
+.sign-container button {
+    background-color: #EC255A;
+    height: 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    color: antiquewhite;
+    width: 200px:
+}
+
+
+.sign-container button:hover{
+    background-color: palevioletred;
+}
